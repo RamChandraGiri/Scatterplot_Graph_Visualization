@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: "Roboto", "sans-serif";
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+svg {
+    background-color: white;
+    border: 2px solid #DBA111;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    position: relative;
+}
+
+.tooltip {
+    display: none;
+    background-color: #D1D3D4;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 100;
+    font-size: 0.75em;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.tooltip.show {
+    display: flex;
+}
+
+.legend {
+    position: absolute;
+    padding-top: 200px;
+    padding-right: 20px;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+.legend .text {
+    position: relative;
+    padding-right: 10px;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.legend .box {
+    position: relative;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 3px;
+    right: 0;
+}
+
+.legend .box.orange {
+    background-color: orange;
+}
+
+.legend .box.skyblue {
+    background-color: skyblue;
+}
